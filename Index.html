@@ -1,0 +1,87 @@
+'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sky Cloud • Status</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0b0e1a;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #e0e7ff;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            backdrop-filter: blur(6px);
+            padding: 3rem 4rem;
+            border-radius: 40px;
+            border: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #a5b4fc, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .status {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 1.8s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.4; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0.4; transform: scale(0.9); }
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #475569;
+            letter-spacing: 0.5px;
+        }
+        .badge {
+            margin-top: 1.5rem;
+            display: inline-block;
+            padding: 0.4rem 1.4rem;
+            border-radius: 40px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid #1e293b;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🌐 SkyHost</h1>
+        <div class="status">
+            <span class="dot"></span> status: online · anycast
+        </div>
+        <div class="badge">
+            ✦ edge node · 83.142.30.120 ✦
+        </div>
+        <div class="footer">
+            protected by skynet· v1.0
+        </div>
+    </div>
+</body>
+</html>
+EOF
